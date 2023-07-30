@@ -7,4 +7,24 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
   </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>32.1.2-jre</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+      <pluginManagement>
+          <plugins>
+              <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-compiler-plugin</artifactId>
+                  <version>3.8.1</version>
+              </plugin>
+          </plugins>
+      </pluginManagement>
+  </build>
 </project>
